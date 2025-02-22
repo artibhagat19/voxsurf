@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #87ede8, #bd4edf);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .signup-box {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  .signup-box h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+  }
+  .signup-box label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    text-align: left;
+    color: #af53b9;
+  }
+  
+  .signup-box label i {
+    margin-right: 8px;
+    color: #89319b;
+  }
+
+  .signup-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .signup-box input:focus {
+    border-color: #a221b0;
+  }
+  
+  .signup-box p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .signup-box a {
+    color: #9b30cd;
+    text-decoration: none;
+  }
+  
+  .signup-box a:hover {
+    text-decoration: underline;
+  }
+  
+  .signup-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #b131bc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .signup-box button:hover {
+    background-color: #e583ec;
+  }
+  
+
+  @media (max-width: 480px) {
+    .signup-box {
+      padding: 20px;
+    }
+  
+    .signup-box h1 {
+      font-size: 1.5rem;
+    }
+
+    .signup-box button {
+      font-size: 0.9rem;
+    }
+  }
+  
