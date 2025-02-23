@@ -1,7 +1,4 @@
 let input = document.querySelector(".inp");
-let icon = document.getElementById('.icon')
-
-
 var appLinks = {
     "youtube": "https://www.youtube.com/",
     "google": "https://www.google.com/",
@@ -15,19 +12,11 @@ var appLinks = {
     "twitter": "https://twitter.com/"
 };
 
-let users = [];
-
-input.addEventListener("input", e =>{
-    const value = e.target.trim();
-    console.log(value);
-})
-
-fetch("appLinks")
-.then(response => response.json())
-.then(data =>{
-    data.forEach(user => {
-        const inputBox = document.createElement("input");
-        inputBox.value = user.appLinks;
-        document.body.appendChild(inputBox);
-    })
-})
+input.addEventListener("input", (e) => {
+    const value = e.target.value.trim().toLowerCase(); 
+    
+    if (appLinks[value]) {
+        console.log("Redirecting to:", appLinks[value]);
+        window.location.href = appLinks[value]; 
+    }
+});
