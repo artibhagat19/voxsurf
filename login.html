@@ -23,4 +23,36 @@
     <p>New to Logistick? <a href="signUp.html">Register</a></p>
   </div>
 </body>
+<script>
+  document.querySelector('form').addEventListener('submit',function(event){
+    event.preventDefault();
+    window.location.href = 'index.html';
+  })
+
+  const email = document.querySelector('input[type="email"]').value;
+  const storEmail = localStorage.getItem("email");
+  const password = document.querySelector('input[type="password"]').value;
+  const storpassword = localStorage.getItem("password");
+  
+  // if(email === "" || password === ""){
+  //   alert("Sign up successful ");
+  // }else{
+  //   alert("Login successful");
+  // }
+
+  if(email === ""){
+    alert("Please enter your email")
+  }else if(email !== storEmail){
+    alert("email dosn't match! Please enter correct email");
+  }else if(password === ""){
+    alert("Please entr your password");
+  }else if(password !== storpassword){
+    alert("password dosn't match! Please enter correct password");
+  }else{
+    alert("Signup successfully");
+  }
+
+  
+
+</script>
 </html>
