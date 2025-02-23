@@ -40,23 +40,13 @@
   const name = document.querySelector('input[type="name"]').value;
   const numner = documnet.querySelector('input[type="number"]').value;
 
-  // if(email === "" || name === "" || number === ""){
-  //   alert("Please fill all blank");
-  // }else{
-  //   alert("signup successful");
-  // }
-  
-  if(email === ""){
-    alert("Please enter your email")
-  }else if(email !== storEmail){
-    alert("email dosn't match! Please enter correct email");
-  }else if(password === ""){
-    alert("Please entr your password");
-  }else if(password !== storpassword){
-    alert("password dosn't match! Please enter correct password");
+  if(email === "" || name === "" || number === ""){
+    alert("Please fill all blank");
   }else{
-    alert("Signup successfully");
+    alert("signup successful");
   }
+  
+
  
 </script>
 </html>
