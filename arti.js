@@ -122,17 +122,14 @@ if (appLinks[appName]) {
     speakText("Opening " + appName); 
     window.open(appLinks[appName]);
 } else {
-    speakText("App not found. Try saying YouTube, WhatsApp, or Instagram.");
-    alert("App not found. Try saying 'YouTube', 'WhatsApp', 'Instagram', etc.");
+    speakText("App not found.");
+    alert("App not found. Try saying 'YouTube','Google','Chrome'.");
 }
 }
 
 function speakText(text) {
     var speech = new SpeechSynthesisUtterance();
     speech.text = text;
-    speech.lang = "en-GB";
-    speech.rate = 1;
-    speech.pitch = 1;
     window.speechSynthesis.speak(speech);
 }
 document.getElementById("openAppBtn").addEventListener("click", function () {
